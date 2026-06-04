@@ -1,0 +1,93 @@
+
+
+
+<!-- Day: 01: Topic: 02 - Syntax & ways to add the css in html - Classroom -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- ! internal css - style tag   -->
+    <style>
+      /* target { */
+      /* propertyName : PropertyValue */
+      /* } */
+
+      h2 {
+        color: red;
+        font-size: 24px;
+        font-weight: 600;
+      }
+    </style>
+    <!-- ! external css - link tag -->
+     <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <!-- html code -->
+
+    <!-- 
+    ? what is the full form of the css 
+    * cascading style sheet 
+
+    ? what is css 
+    it is a styled language that adds the style {alignment , colors, layout, size etc.. of the element  } to the html element 
+
+    ? what is the use of the CSS
+    it is used to add the style to the html elements
+
+    ? how to add the style in html element 
+    * 3 ways 
+    1. inline css : within in the line { element }
+    2. internal css : css inside the head tag {html file}
+    3. external css : css outside the html file 
+
+
+    inline vs internal 
+
+    todo :  1. inline css 
+     * style attribute inside the opening tag  just after the tag name 
+<!-- Inline CSS is CSS written directly inside an HTML element using the style attribute. -->
+     * assign the value to the style attribute inside the ""
+     like - style = "css"
+     * style is an attribute that contains the value and value should be inside or enclosed in double quotation (" value ")
+     ? how to write css : 
+     propertyName :propertyValue ; 
+     propertyName :propertyValue ; 
+     propertyName :propertyValue ; 
+     
+     * how to separate the propertyName & propertyValue - by using colon ( : )
+     * how to separate the propertyName + propertyValue = css property  - by using semi-colon ( ; )
+     
+     
+   style =  " 
+     propertyName1 :propertyValue1 ; 
+     propertyName2 :propertyValue2 ; 
+     propertyName3 :propertyValue3 ; "
+     
+     
+     todo : 2.  internal css 
+     * we are going to use style tag inside the head tag
+     * AND inside the style tag we are going to write the css  
+     <!-- Internal CSS is written inside the <style> tag in the <head> section of an HTML document. -->
+     ? how to write the internal css - syntax 
+     targetName {
+        propertyName1 :propertyValue1 ; 
+        propertyName2 :propertyValue2 ; 
+        propertyName3 :propertyValue3 ;
+   }
+
+
+   todo : 3. external css 
+   * create new css file and link that file with html by using link tag & in the external css file we are not going to use style tag or style attribute 
+    
+    -->
+    <!-- External CSS means CSS is written in a separate .css file and linked to the HTML file. -->
+
+    <p style="color: red; font-size: 24px; font-weight: 600">
+      this is the demo text - styled by inline css
+    </p>
+    <h2>this is the demo text - styled by internal css</h2>
+    <h3>this is the demo text - styled by external css</h3>
+  </body>
+</html>
