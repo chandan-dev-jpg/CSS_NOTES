@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+/* in border box the padding and border are include inside the specified width */
+/* Border box means the width and height include content , padding and border */
+        box-sizing: content-box;
+        /* in content box the width nad height apply only to content */
+        section {
+          width: 150px;
+          height: 100px;
+          background-color: silver;
+          color: white;
+          border: 2px solid red;
+          padding: 20x;
+          overflow: hidden;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </section>
+  </body>
+</html>
