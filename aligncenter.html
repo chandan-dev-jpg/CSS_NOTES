@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body,
+      #mainWrapper,
+      .heroSection {
+        width: 100%;
+        height: 100%;
+      }
+      .heroSection {
+        background: #e33917;
+        background: radial-gradient(
+          circle,
+          rgba(227, 57, 23, 1) 0%,
+          rgba(181, 22, 22, 1) 35%,
+          rgba(87, 16, 16, 0.98) 100%
+        );
+      }
+      .centerBgImg {
+        width: 40%;
+        /* ! make it in a center */
+        /* position: fixed;
+        left: 30%;
+        top: 15%; */
+
+        /* ! - image align at 0,0 , 
+         ? x-axis and y-axis { 0,0 }
+          */
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+      }
+      .bgStipe {
+        width: 130%;
+        height: 5vw;
+        background: #e33917;
+        background: radial-gradient(
+          circle,
+          rgba(227, 57, 23, 1) 0%,
+          rgba(181, 22, 22, 1) 35%,
+          rgba(87, 16, 16, 0.98) 100%
+        );
+        border: 2px solid white;
+
+        /* ! ------------- */
+
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+        rotate: 30deg;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mainWrapper">
+      <div class="heroSection">
+        <div class="bgStipe"></div>
+        <img src="./image.png" alt="" class="centerBgImg" />
+      </div>
+    </div>
+  </body>
+</html>
