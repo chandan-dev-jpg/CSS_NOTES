@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body,
+      #mainWrapper {
+        height: 100%;
+        width: 100%;
+        background-color: skyblue;
+      }
+
+      header {
+        width: 80%;
+        height: 10%;
+        background-color: black;
+        margin: auto;
+        margin-top: 30px;
+        border-radius: 50px;
+
+        position: sticky;
+        top: 20px;
+      }
+
+      #goToTop {
+        font-size: 10vw;
+        border: solid;
+        width: 15vw;
+        height: 15vw;
+        border-radius: 50%;
+        text-align: center;
+        background-color: #fff;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+      }
+
+      .heroSection {
+        width: 100%;
+        height: 100%;
+        background-color: silver;
+        padding: 40px 0px 0px 20px;
+        margin-top: 30px;
+      }
+      .parent {
+        width: 80%;
+        height: 80%;
+        background-color: seashell;
+      }
+      .child1,
+      .child2,
+      .child3 {
+        width: 30%;
+        height: 30%;
+        border: solid;
+        font-size: 10vw;
+      }
+
+      .child1 {
+        background-color: skyblue;
+        position: absolute;
+        z-index: 8;
+
+        left: 1000px;
+      }
+      .child2 {
+        position: absolute;
+        z-index: 9;
+        /* top: 300px; */
+        width: 700px;
+        height: 500px;
+        background-color: red;
+      }
+      .child3 {
+        z-index: 10;
+        position: absolute;
+        /* left: 500px; */
+        background-color: seagreen;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="mainWrapper">
+      <header></header>
+      <p id="goToTop">🔝</p>
+      <section class="heroSection">
+        <div class="parent">
+          <div class="child1">1</div>
+          <div class="child2">2</div>
+          <div class="child3">3</div>
+        </div>
+      </section>
+      <pre>
+        1. z-index : it manage the stacking order of an element 
+        2. absolute : 
+         >> 1. element start moving in z-axis 
+         >> 2. we can move the element by using helping properties of position 
+         >> that are : top ,right, bottom & left
+
+         >> 3. space is free   
+         >> 4. its movement depends on the  nearest position property element 
+
+        3. relative  : 
+        >> 1. element start moving in z-axis 
+        >> 2. we can move the element by using helping properties of position 
+           >> that are : top ,right, bottom & left
+        >> 3. space is still occupied  
+        >> 4. elements move based on the current position of the element { self position }
+      </pre>
+    </section>
+  </body>
+</html>

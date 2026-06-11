@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .parent
+        {
+            width:700px;
+            height:600px;
+            background-color:skyblue;
+            position: relative;
+            top:10px;
+            /* 👉 position: relative means the element stays in its original place, but you can move it a little using top, left, right, or bottom. */
+        }
+        .child
+        {
+            width:400px;
+            height:200px;
+            background-color:gray;
+            color:white;
+            position:absolute;
+            position: absolute ;
+            left:40px;
+
+/* 👉 An element with position: absolute is placed exactly where you tell it to go using top, right, bottom, or left.
+
+👉 It is removed from the normal page flow, so other elements behave as if it is not there. */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            we need to create the border / boundaries for the child elements, so
+        that child can't go outside the parent container for that we need to use
+        the position relative in the parent element
+        </div>
+    </div>
+</body>
+</html>
