@@ -1,47 +1,104 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        *{
-        margin:0;
-        padding:0;
-box-sizing: border-box;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body,
+      #mainWrapper {
+        width: 100%;
+        height: 100%;
+      }
 
-        }
-        html,body,#mainWrapper{
-width:100%;
-height:100%;
-        }
-        .parent
-        {
-width:100%;
-height:100%;
-background-color:seashell;
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-        }
-        .child
-        {
-            width:200px;
-            height:40px;
-            border:2px solid black;
-            background-color: red;
+      .parent {
+        width: 100%;
+        height: 100%;
+        background-color: seashell;
 
-        }
+        /* ! parent properties  */
+        display: flex;
+        /* 
+        whenever we write " display: flex; ", parent become the flex container and all direct child become flex items 
+        >> as well as one property is automatically added that is flex-direction  with default value that is row such as : 
+        * flex-direction : row 
+        */
+        flex-direction: row;
+        /* 
+        flex-direction : it define the axis of the content like x-axis { row } y-axis {column}
+        */
+
+        /* 
+        ! flex-wrap : wrap = it help the child to get the proper size as developer declare , 
+
+        if we have a space in the row child occupy that space else , child move to the next row automatically
+
+        with the help of this property and value , child always get the proper size 
+        
+        */
+        flex-wrap: wrap;
+
+        row-gap: 30px;
+        column-gap: 40px;
+        /* gap: row column ; */
+        gap: 30px 50px;
+
+        /* gap: row/column; */
+        gap: 40px;
+
+        /* 
+        align-content : align the rows that u get after using the flex-wrap : wrap , in start, end & center such as - top ,middle and bottom of the y-axis 
+        ? can we use align-content without using the flex-wrap : wrap  
+        * no - without flex-wrap :wrap - there are no rows , no alignment - no use of the align-content 
+        ! if u want to use align-content , u need to use first flex-wrap : wrap
+        */
+        align-content: start;
+        align-content: end;
+        align-content: center;
+
+        /* ! x-axis space management  */
+        justify-content: end;
+        justify-content: start;
+        justify-content: right;
+        justify-content: left;
+        justify-content: center;
+
+        /* 
+        ? space-between : first element align in left/start and last element align in right/end in the row , and we have equal space b/w all the middle child
+        */
+        justify-content: space-between;
+
+        /* ! y-axis space management */
+        align-items: start;
+        align-items: end;
+        align-items: center;
+        align-items: space-between;
+      }
+
+      .child {
+        width: 30%;
+        height: 40%;
+        border: solid;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="mainWrapper">
-<section class="parent">
-<div class="child"></div>
-<div class="child"></div>
-<div class="child"></div>
-<div class="child"></div>
-</section>
+      <section class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+      </section>
     </div>
-</body>
+  </body>
 </html>
